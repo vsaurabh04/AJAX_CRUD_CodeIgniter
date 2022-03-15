@@ -10,6 +10,7 @@ function fetchForUpdate(emp_id){
                 $("#id_edit").val(emp['id']);
                 $("#fname_edit").val(emp['fname']);
                 $("#lname_edit").val(emp['lname']);
+                $("#email_edit").val(emp['email']);
                 $('.selected_edit').html(emp['dept']);
                 $('.selected_edit').attr('id', emp['dept']);
                 $("#mobile_edit").val(emp['mobile']);
@@ -26,19 +27,27 @@ function updateEmployee(){
         'id' : $('#id_edit').val(),
         'fname' : $('#fname_edit').val(),
         'lname' : $('#lname_edit').val(),
+        'email' : $("#email_edit").val(),
         'dept' : $('.selected_edit').attr('id'),
         'mobile' : $('#mobile_edit').val(),
     };
 
-    $.ajax({
-        type: "POST",
-        url: "update_employee",
-        data: data,
-        success: function (response) {
-            console.log(response.status);
-            $('#employeeEditModal').modal('hide');
-            $('.employeedata').html("");
-            loadEmployee();
-        }
-    });
+    var isInvalid = validateEmployee(data);
+    if(isInvalid){
+        console.log(isInvalid);
+        $('#error_msg_edit').text(isInvalid);
+    }
+    else {
+        $.ajax({
+            type: "POST",
+            url: "update_employee",
+            data: data,
+            success: function (response) {
+                console.log(response.status);
+                $('#employeeEditModal').modal('hide');
+                $('.employeedata').html("");
+                loadEmployee();
+            }
+        });
+    }
 }

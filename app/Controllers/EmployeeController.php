@@ -21,6 +21,7 @@ class EmployeeController extends BaseController
            'fname' => $this->request->getPost('fname'),
            'lname' => $this->request->getPost('lname'),
            'dept' => $this->request->getPost('dept'),
+           'email' => $this->request->getPost('email'),
            'mobile' => $this->request->getPost('mobile')
         ];
         $employee->save($data);
@@ -29,7 +30,7 @@ class EmployeeController extends BaseController
     }
 
     public function read(){
-        $sql1 = 'SELECT e.id, e.fname, e.lname, e.dept, e.mobile, d.dname, d.dhead FROM employee e LEFT JOIN department d ON e.dept = d.deptid ORDER BY e.id DESC';
+        $sql1 = 'SELECT e.id, e.fname, e.lname, e.dept, e.email, e.mobile, d.dname, d.dhead FROM employee e LEFT JOIN department d ON e.dept = d.deptid ORDER BY e.id DESC';
         $query1 = $this->db->query($sql1);
 
         $sql2 = 'SELECT deptid, dname from department';
@@ -62,6 +63,7 @@ class EmployeeController extends BaseController
            'fname' => $this->request->getPost('fname'),
            'lname' => $this->request->getPost('lname'),
            'dept' => $this->request->getPost('dept'),
+           'email' => $this->request->getPost('email'),
            'mobile' => $this->request->getPost('mobile')
         ];
         $employee->update($emp_id, $data);

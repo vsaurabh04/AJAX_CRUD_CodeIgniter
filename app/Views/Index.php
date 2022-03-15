@@ -13,8 +13,6 @@
 </head>
 
 <body>
-
-
 	<!-- Add Employee Modal -->
 	<div class="modal fade" id="employeeModal" tabindex="-1" aria-labelledby="employeeModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -24,6 +22,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body" style="overflow-y:inherit">
+				<div class = "text-center"><span id = "error_msg_add" class = "text-danger "></span></div>
 					<div class="form-group">
 						<label>First Name</label>
 						<input type="text" class="form-control fname" placeholder="First Name">
@@ -31,6 +30,14 @@
 					<div class="form-group">
 						<label>Last Name</label>
 						<input type="text" class="form-control lname" placeholder="Last Name">
+					</div>
+					<div class="form-group">
+						<label >Email</label>
+						<input type="text" class="form-control email" placeholder="Email Id">
+					</div>
+					<div class="form-group">
+						<label>Contact</label>
+						<input type="text" class="form-control mobile" placeholder="Mobile Num." required minlength="10" maxlength="10"/>
 					</div>
 					<div class="form-group">
 						<div class="dropdown my-1">
@@ -43,12 +50,6 @@
 							</div>
 						</div>
 					</div>
-
-
-					<div class="form-group">
-						<label>Mobile</label>
-						<input type="text" class="form-control mobile" placeholder="Mobile Num.">
-					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -57,7 +58,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<!-- View Modal -->
 	<div class="modal fade" id="employeeViewModal" tabindex="-1" aria-labelledby="employeeViewModalLabel" aria-hidden="true">
@@ -71,8 +71,9 @@
 					<h4>ID: <span class="id_view"></span></h4>
 					<h4>First Name: <span class="fname_view"></span></h4>
 					<h4>Last Name: <span class="lname_view"></span></h4>
-					<h4>Department: <span class="dept_view"></span></h4>
+					<h4>Email: <span class="email_view"></span></h4>
 					<h4>Contact: <span class="mobile_view"></span></h4>
+					<h4>Department: <span class="dept_view"></span></h4>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -90,6 +91,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
+					<div class = "text-center"><span id = "error_msg_edit" class = "text-danger "></span></div>
 					<input type="hidden" id="id_edit">
 					<div class="form-group">
 						<label>First Name</label>
@@ -98,6 +100,14 @@
 					<div class="form-group">
 						<label>Last Name</label>
 						<input type="text" id="lname_edit" class="form-control" placeholder="Last Name">
+					</div>
+					<div class="form-group">
+						<label for>Email</label>
+						<input type="text" id = "email_edit" class="form-control" placeholder="Email Id">
+					</div>
+					<div class="form-group">
+						<label>Mobile</label>
+						<input type="text" id="mobile_edit" class="form-control" placeholder="Mobile Num.">
 					</div>
 					<div class="form-group">
 						<div class="dropdown my-1">
@@ -110,11 +120,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="form-group">
-						<label>Mobile</label>
-						<input type="text" id="mobile_edit" class="form-control" placeholder="Mobile Num.">
 					</div>
-				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary emp-edit">Update</button>
@@ -132,6 +138,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
+				<div class = "text-center"><span id = "error_msg_dept" class = "text-danger"></span></div>
 					<div class="form-group">
 						<label>Department ID </label>
 						<input type="text" class="form-control deptid" placeholder="Department ID">
@@ -158,15 +165,16 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="deleteConfirmModalLabel">Confirm delete ?</h5>
+					<h5 class="modal-title" id="deleteConfirmModalLabel">Are you sure you want to delete ?</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<h4>ID: <span class="id_delete"></span></h4>
 					<h4>First Name: <span class="fname_delete"></span></h4>
 					<h4>Last Name: <span class="lname_delete"></span></h4>
+					<h4>Email: <span class="email_delete"></span></h4>
+					<h4>Mobile: <span class="mobile_delete"></span></h4>
 					<h4>Department: <span class="dept_delete"></span></h4>
-					<h4>Contact: <span class="mobile_delete"></span></h4>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -199,10 +207,11 @@
 									<th>ID</th>
 									<th>First Name</th>
 									<th>Last Name</th>
+									<th>Email</th>
+									<th>Contact</th>
 									<th>Dept ID</th>
 									<th>Department Name</th>
-									<th>Department Head</th>
-									<th>Contact</th>
+									<th>Reporting Manager</th>
 								</tr>
 							</thead>
 							<tbody class="employeedata"></tbody>
@@ -212,8 +221,7 @@
 			</div>
 		</div>
 	</div>
-
-
+	<script src="assets/js/validate.js"></script>
 	<script src="assets/js/loadEmployee.js"></script>
 	<script src="assets/js/createEmployee.js"></script>
 	<script src="assets/js/viewEmployee.js"></script>

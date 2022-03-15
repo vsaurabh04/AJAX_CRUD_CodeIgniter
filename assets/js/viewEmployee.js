@@ -11,6 +11,7 @@ function viewEmployee(emp_id){
                 $('.fname_view').text(emp['fname']);
                 $('.lname_view').text(emp['lname']);
                 $('.dept_view').text(emp['dept']);
+                $('.email_view').text(emp['email']);
                 $('.mobile_view').text(emp['mobile']);
                 $('#employeeViewModal').modal('show');
             });

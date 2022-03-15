@@ -10,6 +10,7 @@ class Employee extends Model
         'fname',
         'lname',
         'dept',
+        'email',
         'mobile'
     ];
 }

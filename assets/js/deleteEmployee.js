@@ -20,6 +20,7 @@ function confirmModal(emp){
     $('.fname_delete').text(emp['fname']);
     $('.lname_delete').text(emp['lname']);
     $('.dept_delete').text(emp['dept']);
+    $('.email_delete').text(emp['email']);
     $('.mobile_delete').text(emp['mobile']);
 
     $('#deleteConfirmModal').modal('show');
