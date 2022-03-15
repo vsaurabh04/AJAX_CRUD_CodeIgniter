@@ -13,8 +13,10 @@ function createDepartment(){
             $('#departmentModal').find('input').val('');
             $('.employeedata').html("");
 
-            loadEmployee();
+            depts = loadEmployee();
             console.log(response.status);
-        }
+        },
+        async:false
     });
+    return depts;
 }

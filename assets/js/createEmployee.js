@@ -2,9 +2,11 @@ function createEmployee(){
     var data = {
         'fname' : $('.fname').val(),
         'lname' : $('.lname').val(),
-        'dept' : $('.dept').val(),
+        'dept' : $('.selected').attr('id'),
         'mobile' : $('.mobile').val(),
     }
+
+    // console.log(data);
 
     $.ajax({
         type: "POST",
@@ -13,6 +15,7 @@ function createEmployee(){
         success: function (response) {
             $('#employeeModal').modal('hide');
             $('#employeeModal').find('input').val('');
+            $('.selected').html("Select Department");
             $('.employeedata').html("");
 
             loadEmployee();

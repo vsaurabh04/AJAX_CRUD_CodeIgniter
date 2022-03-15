@@ -36,7 +36,7 @@ class EmployeeController extends BaseController
         $query2 = $this->db->query($sql2);
 
         $data['joinedData'] = $query1->getResult();
-        $data['deptids'] = $query2->getResult();
+        $data['depts'] = $query2->getResult();
 
         return $this->response->setJSON($data);
     }

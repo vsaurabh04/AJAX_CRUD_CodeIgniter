@@ -161,3 +161,6 @@ CRITICAL - 2022-03-15 05:09:34 --> Undefined constant "App\Controllers\resultObj
 #2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+ERROR - 2022-03-15 06:50:58 --> Column 'dept' cannot be null
+ERROR - 2022-03-15 06:52:06 --> Column 'dept' cannot be null
+ERROR - 2022-03-15 06:54:16 --> Column 'dept' cannot be null

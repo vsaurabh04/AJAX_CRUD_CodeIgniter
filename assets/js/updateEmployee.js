@@ -10,7 +10,8 @@ function fetchForUpdate(emp_id){
                 $("#id_edit").val(emp['id']);
                 $("#fname_edit").val(emp['fname']);
                 $("#lname_edit").val(emp['lname']);
-                $("#dept_edit").val(emp['dept']);
+                $('.selected_edit').html(emp['dept']);
+                $('.selected_edit').attr('id', emp['dept']);
                 $("#mobile_edit").val(emp['mobile']);
 
                 $('#employeeEditModal').modal('show');
@@ -25,7 +26,7 @@ function updateEmployee(){
         'id' : $('#id_edit').val(),
         'fname' : $('#fname_edit').val(),
         'lname' : $('#lname_edit').val(),
-        'dept' : $('#dept_edit').val(),
+        'dept' : $('.selected_edit').attr('id'),
         'mobile' : $('#mobile_edit').val(),
     };
 

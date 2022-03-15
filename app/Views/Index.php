@@ -5,11 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 	<title>Employee Management</title>
 </head>
 
 <body>
+
+
 	<!-- Add Employee Modal -->
 	<div class="modal fade" id="employeeModal" tabindex="-1" aria-labelledby="employeeModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -18,7 +23,7 @@
 					<h5 class="modal-title" id="employeeModalLabel">Employee Details</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body" style="overflow-y:inherit">
 					<div class="form-group">
 						<label>First Name</label>
 						<input type="text" class="form-control fname" placeholder="First Name">
@@ -28,20 +33,17 @@
 						<input type="text" class="form-control lname" placeholder="Last Name">
 					</div>
 					<div class="form-group">
-						<label>Dept Name</label>
-						<input type="text" class="form-control dept" placeholder="Department Name">
-					</div>
-
-					<div class="dropdown show">
-						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Select Department
-						</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="#">depar</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown my-1">
+							<label>Dept Name</label>
+							<button class=" btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span id="" class="selected"> Select Department </span>
+							</button>
+							<div class="dept_drop dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<!-- Here the anchor tags will be appended -->
+							</div>
 						</div>
 					</div>
+
 
 					<div class="form-group">
 						<label>Mobile</label>
@@ -98,8 +100,15 @@
 						<input type="text" id="lname_edit" class="form-control" placeholder="Last Name">
 					</div>
 					<div class="form-group">
-						<label>Dept Name</label>
-						<input type="text" id = "dept_edit" class="form-control" placeholder="Department Name">
+						<div class="dropdown my-1">
+							<label>Dept Name</label>
+							<button class=" btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span id="" class="selected_edit"> Select Department </span>
+							</button>
+							<div class="dept_drop_edit dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<!-- Here the anchor tags will be appended -->
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
 						<label>Mobile</label>
@@ -144,6 +153,29 @@
 		</div>
 	</div>
 
+	<!-- Delete Confirm Modal -->
+	<div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="deleteConfirmModalLabel">Confirm delete ?</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h4>ID: <span class="id_delete"></span></h4>
+					<h4>First Name: <span class="fname_delete"></span></h4>
+					<h4>Last Name: <span class="lname_delete"></span></h4>
+					<h4>Department: <span class="dept_delete"></span></h4>
+					<h4>Contact: <span class="mobile_delete"></span></h4>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary confirm-delete">Yes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class = "container">
 		<div class="row">
 			<div class="col-md-12 my-4">
@@ -155,7 +187,7 @@
 					<div class="card-header">
 						<h4>AJAX Employee Data Management CodeIgniter
 							<div class="float-end">
-								<a href="#" data-bs-toggle="modal" data-bs-target="#employeeModal" class = "btn btn-primary"> Add Employee </a>
+								<a href="#" data-bs-toggle="modal" data-bs-target="#employeeModal" class = "btn btn-primary add_emp"> Add Employee </a>
 								<a href="#" data-bs-toggle="modal" data-bs-target="#departmentModal" class = "btn btn-primary"> Add Department </a>
 							</div>
 						</h4>
@@ -181,8 +213,7 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<script src="assets/js/loadEmployee.js"></script>
 	<script src="assets/js/createEmployee.js"></script>
 	<script src="assets/js/viewEmployee.js"></script>

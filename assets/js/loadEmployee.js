@@ -3,17 +3,16 @@ function loadEmployee(){
         type: "GET",
         url: "read",
         success: function (response) {
-             console.log(response.deptids);
-
+            depts = response.depts;
             $.each(response.joinedData, function (key, value) { 
                     $('.employeedata').append('<tr>\
                     <td class="emp_id">' + value['id'] + '</td>\
-                    <td>' + value['fname'] + '</td>\
-                    <td>' + value['lname'] + '</td>\
-                    <td>' + value['dept'] + '</td>\
-                    <td>' + value['dname'] + '</td>\
-                    <td>' + value['dhead'] + '</td>\
-                    <td>' + value['mobile'] + '</td>\
+                    <td class="emp_fname">' + value['fname'] + '</td>\
+                    <td class="emp_lname">' + value['lname'] + '</td>\
+                    <td class="emp_dept">' + value['dept'] + '</td>\
+                    <td class="emp_dname">' + value['dname'] + '</td>\
+                    <td class="emp_dhead">' + value['dhead'] + '</td>\
+                    <td class="emp_mobile">' + value['mobile'] + '</td>\
                     <td class = "text-center">\
                         <a href = "#" class = "badge btn-info view-btn">View</a>\
                         <a href = "#" class = "badge btn-primary edit-btn">Edit</a>\
@@ -21,6 +20,8 @@ function loadEmployee(){
                     </td>\
                     </tr>');
             });
-        }
+        },
+        async : false
     });
+    return depts;
 }
