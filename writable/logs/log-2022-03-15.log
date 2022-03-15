@@ -1,0 +1,163 @@
+CRITICAL - 2022-03-15 04:52:10 --> Undefined constant "App\Controllers\sql"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 04:53:13 --> Undefined constant "App\Controllers\sql"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 04:53:43 --> Undefined constant "App\Controllers\sql"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 04:54:15 --> Undefined constant "App\Controllers\sql"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 04:54:54 --> Undefined constant "App\Controllers\sql"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 04:55:46 --> Undefined property: App\Controllers\EmployeeController::$load
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 04:55:59 --> Undefined property: App\Controllers\EmployeeController::$load
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 04:56:11 --> Undefined property: App\Controllers\EmployeeController::$load
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 04:56:17 --> Undefined property: App\Controllers\EmployeeController::$load
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 04:56:24 --> Undefined property: App\Controllers\EmployeeController::$load
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 04:56:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 04:56:51 --> Undefined variable $res
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:00:12 --> Undefined property: App\Controllers\EmployeeController::$db
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:02:10 --> Undefined property: App\Controllers\EmployeeController::$db
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:02:49 --> Undefined constant "App\Controllers\db"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 05:02:56 --> Undefined constant "App\Controllers\db"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 05:03:03 --> Undefined constant "App\Controllers\db"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 05:03:10 --> Undefined variable $res
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:03:16 --> Undefined variable $data
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:03:41 --> Undefined constant "App\Controllers\e"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 05:05:01 --> Undefined variable $e
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:07:04 --> Undefined variable $sql
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:08:00 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 05:09:25 --> Undefined array key "resultObject"
+#0 C:\xampp\htdocs\ci4\app\Controllers\EmployeeController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#3 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 05:09:34 --> Undefined constant "App\Controllers\resultObject"
+#0 C:\xampp\htdocs\ci4\system\CodeIgniter.php(832): App\Controllers\EmployeeController->read()
+#1 C:\xampp\htdocs\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#2 C:\xampp\htdocs\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
